@@ -22,8 +22,8 @@ class Pickup {
 	let district: String?
 	let city: String?
 	let postcode: Any?
-	let latitude: Int?
-	let longitude: Int?
+	let latitude: Double?
+	let longitude: Double?
 	let phone: Any?
 	let nearestBts: String?
 	let notableArea: Any?
@@ -44,6 +44,7 @@ class Pickup {
 	let hours: [Any]?
 	let images: Images?
 	let isDefaultLocation: Bool?
+    var distance:Double = 0.0
 
 	init(_ json: JSON) {
 		feature = json["feature"].stringValue
@@ -59,8 +60,8 @@ class Pickup {
 		district = json["district"].stringValue
 		city = json["city"].stringValue
 		postcode = json["postcode"]
-		latitude = json["latitude"].intValue
-		longitude = json["longitude"].intValue
+		latitude = json["latitude"].doubleValue
+		longitude = json["longitude"].doubleValue
 		phone = json["phone"]
 		nearestBts = json["nearest_bts"].stringValue
 		notableArea = json["notable_area"]

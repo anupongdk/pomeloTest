@@ -10,7 +10,7 @@ import SwiftyJSON
 class PickupData {
 
 	let numberOfNewLocations: Int?
-	let pickup: [Pickup]?
+	var pickup: [Pickup]?
 
 	init(_ json: JSON) {
 		numberOfNewLocations = json["number_of_new_locations"].intValue

@@ -18,6 +18,14 @@
 		4C717FF424F8F8BF00248775 /* UIbutton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C717FF224F8F8BF00248775 /* UIbutton+Extension.swift */; };
 		4C717FF624F93A0700248775 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C717FF524F93A0700248775 /* Readme.md */; };
 		4C717FF724F93A0700248775 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C717FF524F93A0700248775 /* Readme.md */; };
+		4C717FFA24F953BD00248775 /* DistanceCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C717FF924F953BD00248775 /* DistanceCalculate.swift */; };
+		4C717FFB24F953BD00248775 /* DistanceCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C717FF924F953BD00248775 /* DistanceCalculate.swift */; };
+		4C717FFD24F9574F00248775 /* mockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C717FFC24F9574F00248775 /* mockData.json */; };
+		4C717FFE24F9574F00248775 /* mockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C717FFC24F9574F00248775 /* mockData.json */; };
+		4C71800024F957A300248775 /* MockDataReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C717FFF24F957A300248775 /* MockDataReader.swift */; };
+		4C71800124F957A300248775 /* MockDataReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C717FFF24F957A300248775 /* MockDataReader.swift */; };
+		4C71800324F9649600248775 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C71800224F9649600248775 /* Double+Extension.swift */; };
+		4C71800424F9649600248775 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C71800224F9649600248775 /* Double+Extension.swift */; };
 		4C773E3A24F6A8470010C494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E3924F6A8470010C494 /* AppDelegate.swift */; };
 		4C773E3C24F6A8470010C494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E3B24F6A8470010C494 /* SceneDelegate.swift */; };
 		4C773E3E24F6A8470010C494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E3D24F6A8470010C494 /* ViewController.swift */; };
@@ -73,6 +81,10 @@
 		4C717FE924F8F55500248775 /* PickupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickupTableViewCell.xib; sourceTree = "<group>"; };
 		4C717FF224F8F8BF00248775 /* UIbutton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIbutton+Extension.swift"; sourceTree = "<group>"; };
 		4C717FF524F93A0700248775 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		4C717FF924F953BD00248775 /* DistanceCalculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculate.swift; sourceTree = "<group>"; };
+		4C717FFC24F9574F00248775 /* mockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockData.json; sourceTree = "<group>"; };
+		4C717FFF24F957A300248775 /* MockDataReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataReader.swift; sourceTree = "<group>"; };
+		4C71800224F9649600248775 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		4C773E3624F6A8470010C494 /* Pomelo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomelo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C773E3924F6A8470010C494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C773E3B24F6A8470010C494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,13 +171,24 @@
 			isa = PBXGroup;
 			children = (
 				4C717FF224F8F8BF00248775 /* UIbutton+Extension.swift */,
+				4C71800224F9649600248775 /* Double+Extension.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		4C717FF824F9539800248775 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				4C717FF924F953BD00248775 /* DistanceCalculate.swift */,
+				4C717FFF24F957A300248775 /* MockDataReader.swift */,
+			);
+			path = helper;
 			sourceTree = "<group>";
 		};
 		4C773E2D24F6A8470010C494 = {
 			isa = PBXGroup;
 			children = (
+				4C717FFC24F9574F00248775 /* mockData.json */,
 				4C717FF524F93A0700248775 /* Readme.md */,
 				4C773E3824F6A8470010C494 /* Pomelo */,
 				4C773E4F24F6A84C0010C494 /* PomeloTests */,
@@ -223,6 +246,7 @@
 		4C773E7B24F6AA350010C494 /* appScene */ = {
 			isa = PBXGroup;
 			children = (
+				4C717FF824F9539800248775 /* helper */,
 				4C717FEE24F8F86D00248775 /* extension */,
 				4C773E7C24F6AA560010C494 /* pickup */,
 			);
@@ -393,6 +417,7 @@
 				4C717FF624F93A0700248775 /* Readme.md in Resources */,
 				4C773E4624F6A84C0010C494 /* LaunchScreen.storyboard in Resources */,
 				4C773E4324F6A84C0010C494 /* Assets.xcassets in Resources */,
+				4C717FFD24F9574F00248775 /* mockData.json in Resources */,
 				4C773E4124F6A8470010C494 /* Main.storyboard in Resources */,
 				4C717FEC24F8F55500248775 /* PickupTableViewCell.xib in Resources */,
 			);
@@ -402,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C717FFE24F9574F00248775 /* mockData.json in Resources */,
 				4C717FF724F93A0700248775 /* Readme.md in Resources */,
 				4C717FED24F8F55500248775 /* PickupTableViewCell.xib in Resources */,
 			);
@@ -530,14 +556,17 @@
 				4C773E7524F6AA290010C494 /* PickUpModels.swift in Sources */,
 				4C773E8824F6B06E0010C494 /* Features.swift in Sources */,
 				4C773E6F24F6AA290010C494 /* PickUpPresenter.swift in Sources */,
+				4C71800024F957A300248775 /* MockDataReader.swift in Sources */,
 				4C773E8524F6B06E0010C494 /* Floormap.swift in Sources */,
 				4C717FEA24F8F55500248775 /* PickupTableViewCell.swift in Sources */,
 				4C717FF324F8F8BF00248775 /* UIbutton+Extension.swift in Sources */,
 				4C773E3E24F6A8470010C494 /* ViewController.swift in Sources */,
 				4C773E7324F6AA290010C494 /* PickUpRouter.swift in Sources */,
+				4C717FFA24F953BD00248775 /* DistanceCalculate.swift in Sources */,
 				4C717FE524F8E93400248775 /* ServiceConfig.swift in Sources */,
 				4C773E3A24F6A8470010C494 /* AppDelegate.swift in Sources */,
 				4C773E7124F6AA290010C494 /* PickUpWorker.swift in Sources */,
+				4C71800324F9649600248775 /* Double+Extension.swift in Sources */,
 				4C773E7924F6AA290010C494 /* PickUpInteractor.swift in Sources */,
 				4C773E8B24F6B06E0010C494 /* Primary.swift in Sources */,
 				4C773E8624F6B06E0010C494 /* PickupData.swift in Sources */,
@@ -554,7 +583,10 @@
 				4C773E7224F6AA290010C494 /* PickUpWorker.swift in Sources */,
 				4C773E7024F6AA290010C494 /* PickUpPresenter.swift in Sources */,
 				4C717FF424F8F8BF00248775 /* UIbutton+Extension.swift in Sources */,
+				4C71800424F9649600248775 /* Double+Extension.swift in Sources */,
 				4C773E7624F6AA290010C494 /* PickUpModels.swift in Sources */,
+				4C717FFB24F953BD00248775 /* DistanceCalculate.swift in Sources */,
+				4C71800124F957A300248775 /* MockDataReader.swift in Sources */,
 				4C773E7424F6AA290010C494 /* PickUpRouter.swift in Sources */,
 				4C717FE624F8E93400248775 /* ServiceConfig.swift in Sources */,
 				4C773E5124F6A84C0010C494 /* PomeloTests.swift in Sources */,

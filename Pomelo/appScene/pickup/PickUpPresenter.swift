@@ -16,6 +16,7 @@ protocol PickUpPresentationLogic
 {
   func presentSomething(response: PickUpModel.Something.Response)
   func presentPickupData(data:PickupData)
+  func presentError(error:NSError)
 }
 
 class PickUpPresenter: PickUpPresentationLogic
@@ -34,5 +35,8 @@ class PickUpPresenter: PickUpPresentationLogic
         viewController?.displayPickupData(data: data)
     }
     
+    func presentError(error:NSError) {
+        viewController?.presentError(error: error)
+    }
     
 }

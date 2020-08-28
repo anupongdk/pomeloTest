@@ -27,14 +27,23 @@ class PickUpWorker
             
             switch response.result {
                  case .success(let value):
-                    let jsonData = JSON(value)
-                    let pickupData = PickupData(jsonData)
-                    completionHandler(pickupData, nil)
-                 break
-                    
+                     let jsonData = JSON(value)
+                     if jsonData.dictionary?.isEmpty ?? true {
+                         // for test when server down
+//                        MockDataReader.getJsonData { (data) in
+//                            completionHandler(data,nil)
+//                        }
+                        
+                         completionHandler(nil,NSError(domain: "Service Temporarily Unavailable", code: 503 ))
+                        
+                     }else{
+                        let pickupData = PickupData(jsonData)
+                        completionHandler(pickupData, nil)
+                     }
+                                        
                 case .failure(let error):
-//                    completionHandler(nil,error.)
-                print(error)
+                    
+                    completionHandler(nil,NSError(domain: error.errorDescription ?? "", code: error.responseCode ?? 0))
                 
             }
         }

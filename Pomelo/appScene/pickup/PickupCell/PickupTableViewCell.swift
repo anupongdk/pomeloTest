@@ -43,24 +43,12 @@ class PickupTableViewCell: UITableViewCell {
         lblType.text = cellData?.city
         btnCheck.setCheckButton(isSelect:false)
         
-        
-        if cellData?.address1 == "" {
-            print(cellData?.alias)
-            constLblLocationTop.constant = 0
-            constLblLocationBtm.constant = 0
+        if cellData?.distance == 0.0 {
+            lblDistance.text = ""
         }else{
-            constLblLocationTop.constant = 8
-            constLblLocationBtm.constant = 4
+            lblDistance.text = "\(cellData?.distance ?? 0.0) KM"
         }
-        
-        if cellData?.city == "" {
-            constLblTypeTop.constant = 0
-            constLblTypeBtm.constant = 0
-        }else{
-            constLblTypeTop.constant = 4
-            constLblTypeBtm.constant = 8
-        }
-        self.layoutIfNeeded()
+       
     }
     
 }

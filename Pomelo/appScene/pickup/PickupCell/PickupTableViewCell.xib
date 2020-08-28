@@ -22,7 +22,7 @@
                             <constraint firstAttribute="height" constant="30" id="Hpz-Ah-5YJ"/>
                             <constraint firstAttribute="width" constant="30" id="tcT-K9-jsb"/>
                         </constraints>
-                        <state key="normal" image="checkmark.circle.fill" catalog="system"/>
+                        <state key="normal" image="checkmark.circle.fill"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrH-q9-FNq">
                         <rect key="frame" x="50" y="28.5" width="68" height="23"/>
@@ -33,7 +33,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="lblDis" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDG-XU-1Sa">
                         <rect key="frame" x="126" y="32" width="186" height="16.5"/>
                         <constraints>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="f0E-VK-zLS"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="f0E-VK-zLS"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                         <nil key="textColor"/>
@@ -86,6 +86,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="checkmark.circle.fill" width="128" height="121"/>
     </resources>
 </document>

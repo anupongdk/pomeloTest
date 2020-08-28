@@ -11,12 +11,16 @@
 //
 
 import UIKit
+import CoreLocation
+
 
 protocol PickUpBusinessLogic
 {
   func doSomething(request: PickUpModel.Something.Request)
   func getData()
   func getDataLoaded() -> [Pickup]
+  func setUpdateLocation(location:CLLocation)
+ 
     
 }
 
@@ -32,7 +36,7 @@ class PickUpInteractor: PickUpBusinessLogic, PickUpDataStore
   //var name: String = ""
     
   var mainPickupData:PickupData?
-
+  var location:CLLocation?
   
   // MARK: Do something
   
@@ -51,7 +55,12 @@ class PickUpInteractor: PickUpBusinessLogic, PickUpDataStore
             if data != nil {
                 self?.mainPickupData = data
                 self?.presenter?.presentPickupData(data: data!)
+                self?.filterEmptyAliasData()
+                self?.addDistanceToPickup()
+            }else if err != nil {
+                self?.presenter?.presentError(error: err!)
             }
+               
             
         })
     }
@@ -61,16 +70,40 @@ class PickUpInteractor: PickUpBusinessLogic, PickUpDataStore
         return mainPickupData?.pickup?.filter{$0.active == true && $0.alias != "" } ?? [Pickup]()
     }
     
+    func filterEmptyAliasData() {
+        mainPickupData?.pickup = mainPickupData?.pickup?.filter{$0.active == true && $0.alias != "" } ?? [Pickup]()
+    
+    }
+    
     
     func sortByDistance() {
         
-    }
-    
-    func updateCurrentLocation() {
+       guard mainPickupData != nil else {return}
+        
+       mainPickupData?.pickup = mainPickupData?.pickup?.sorted(by: { $0.distance < $1.distance })
+       self.presenter?.presentPickupData(data: mainPickupData!)
         
     }
     
+    func addDistanceToPickup() {
+       
+        guard location != nil else {return}
+        mainPickupData?.pickup = mainPickupData?.pickup?.map{
+            let shopLocate = CLLocation(latitude: $0.latitude ?? 0, longitude: $0.longitude ?? 0)
+            let distanceKiloMeters = (shopLocate.distance(from: location!))/1000
+            $0.distance = distanceKiloMeters.roundToDecimal(2)
+            return $0
+        }
+        
+        sortByDistance()
+    }
     
+  
+    
+    func setUpdateLocation(location updatedLocation:CLLocation) {
+        location = updatedLocation
+        addDistanceToPickup()
+    }
     
     
 }

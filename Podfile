@@ -9,8 +9,11 @@ target 'Pomelo' do
 
 	pod 'SwiftyJSON', '~> 4.0'
 	pod 'Alamofire', '~> 5.2'
-	pod 'SDWebImage', '~> 5.0'
+  pod 'PullToRefresher'
+  pod 'Toast-Swift', '~> 5.0.0'
   
+
+
 
 
   target 'PomeloTests' do

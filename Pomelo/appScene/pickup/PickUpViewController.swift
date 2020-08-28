@@ -11,18 +11,28 @@
 //
 
 import UIKit
+import CoreLocation
+import PullToRefresh
+import Toast_Swift
 
 protocol PickUpDisplayLogic: class
 {
   func displaySomething(viewModel: PickUpModel.Something.ViewModel)
   func displayPickupData(data:PickupData)
+  func presentError(error:NSError)
+   
+  
 }
 
 class PickUpViewController: UIViewController, PickUpDisplayLogic
 {   
   var interactor: PickUpBusinessLogic?
   var router: (NSObjectProtocol & PickUpRoutingLogic & PickUpDataPassing)?
+    
+    let refresher = PullToRefresh()
+    var locationManager: CLLocationManager = CLLocationManager()
     @IBOutlet weak var tablePickupList: UITableView!
+    
     
   // MARK: Object lifecycle
   
@@ -52,9 +62,48 @@ class PickUpViewController: UIViewController, PickUpDisplayLogic
     presenter.viewController = viewController
     router.viewController = viewController
     router.dataStore = interactor
-
-    
+    self.title = "Pomelo Pick Up"
+    setUpNavigateionBarButton()
   }
+    
+    func setUpNavigateionBarButton() {
+        var image = UIImage.init(systemName: "location.fill")
+        image = image?.withRenderingMode(.alwaysTemplate)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style:.plain, target: self, action:  #selector(callLocation))
+        self.navigationItem.rightBarButtonItem?.tintColor = .black
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        setUptableView()
+    }
+    
+    func setUpCorelocation()  {
+        
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+       
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+        
+    }
+    
+    func setUptableView() {
+        tablePickupList.register(UINib(nibName: "PickupTableViewCell", bundle: nil), forCellReuseIdentifier: "PickupTableViewCell")
+        tablePickupList.delegate = self
+        tablePickupList.dataSource = self
+        tablePickupList.tableFooterView = UIView(frame: .zero)
+        tablePickupList.addPullToRefresh(refresher) {
+            self.tablePickupList.endRefreshing(at: .top)
+            self.loadPickupData()
+            
+            
+        }
+    }
   
   // MARK: Routing
   
@@ -92,12 +141,20 @@ class PickUpViewController: UIViewController, PickUpDisplayLogic
     //nameTextField.text = viewModel.name
   }
     
-    func displayPickupData(data:PickupData) {
-        tablePickupList.register(UINib(nibName: "PickupTableViewCell", bundle: nil), forCellReuseIdentifier: "PickupTableViewCell")
-        tablePickupList.delegate = self
-        tablePickupList.dataSource = self
+  func displayPickupData(data:PickupData) {
+        
         tablePickupList.reloadData()
     }
+    
+    func presentError(error:NSError)  {
+         tablePickupList.endRefreshing(at: .top)
+        self.view.makeToast(error.description)
+    }
+    
+    @objc func callLocation(){
+//        interactor.
+          setUpCorelocation()
+       }
 }
 
 extension PickUpViewController:UITableViewDelegate,UITableViewDataSource {
@@ -115,5 +172,16 @@ extension PickUpViewController:UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    
+}
+
+
+extension PickUpViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        manager.stopUpdatingLocation()
+        interactor?.setUpdateLocation(location: locations.last!)
+    }
+
     
 }
