@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191B6F5F65CC88686DE5CF7E /* Pods_Pomelo_PomeloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CF5FDA33CE645359DA86A0 /* Pods_Pomelo_PomeloUITests.framework */; };
+		4C717FE524F8E93400248775 /* ServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C717FE424F8E93400248775 /* ServiceConfig.swift */; };
+		4C717FE624F8E93400248775 /* ServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C717FE424F8E93400248775 /* ServiceConfig.swift */; };
+		4C717FEA24F8F55500248775 /* PickupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C717FE824F8F55500248775 /* PickupTableViewCell.swift */; };
+		4C717FEB24F8F55500248775 /* PickupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C717FE824F8F55500248775 /* PickupTableViewCell.swift */; };
+		4C717FEC24F8F55500248775 /* PickupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C717FE924F8F55500248775 /* PickupTableViewCell.xib */; };
+		4C717FED24F8F55500248775 /* PickupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C717FE924F8F55500248775 /* PickupTableViewCell.xib */; };
+		4C717FF324F8F8BF00248775 /* UIbutton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C717FF224F8F8BF00248775 /* UIbutton+Extension.swift */; };
+		4C717FF424F8F8BF00248775 /* UIbutton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C717FF224F8F8BF00248775 /* UIbutton+Extension.swift */; };
+		4C717FF624F93A0700248775 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C717FF524F93A0700248775 /* Readme.md */; };
+		4C717FF724F93A0700248775 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C717FF524F93A0700248775 /* Readme.md */; };
+		4C773E3A24F6A8470010C494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E3924F6A8470010C494 /* AppDelegate.swift */; };
+		4C773E3C24F6A8470010C494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E3B24F6A8470010C494 /* SceneDelegate.swift */; };
+		4C773E3E24F6A8470010C494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E3D24F6A8470010C494 /* ViewController.swift */; };
+		4C773E4124F6A8470010C494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C773E3F24F6A8470010C494 /* Main.storyboard */; };
+		4C773E4324F6A84C0010C494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C773E4224F6A84C0010C494 /* Assets.xcassets */; };
+		4C773E4624F6A84C0010C494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C773E4424F6A84C0010C494 /* LaunchScreen.storyboard */; };
+		4C773E5124F6A84C0010C494 /* PomeloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E5024F6A84C0010C494 /* PomeloTests.swift */; };
+		4C773E5C24F6A84C0010C494 /* PomeloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E5B24F6A84C0010C494 /* PomeloUITests.swift */; };
+		4C773E6F24F6AA290010C494 /* PickUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E6924F6AA290010C494 /* PickUpPresenter.swift */; };
+		4C773E7024F6AA290010C494 /* PickUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E6924F6AA290010C494 /* PickUpPresenter.swift */; };
+		4C773E7124F6AA290010C494 /* PickUpWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E6A24F6AA290010C494 /* PickUpWorker.swift */; };
+		4C773E7224F6AA290010C494 /* PickUpWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E6A24F6AA290010C494 /* PickUpWorker.swift */; };
+		4C773E7324F6AA290010C494 /* PickUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E6B24F6AA290010C494 /* PickUpRouter.swift */; };
+		4C773E7424F6AA290010C494 /* PickUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E6B24F6AA290010C494 /* PickUpRouter.swift */; };
+		4C773E7524F6AA290010C494 /* PickUpModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E6C24F6AA290010C494 /* PickUpModels.swift */; };
+		4C773E7624F6AA290010C494 /* PickUpModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E6C24F6AA290010C494 /* PickUpModels.swift */; };
+		4C773E7724F6AA290010C494 /* PickUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E6D24F6AA290010C494 /* PickUpViewController.swift */; };
+		4C773E7824F6AA290010C494 /* PickUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E6D24F6AA290010C494 /* PickUpViewController.swift */; };
+		4C773E7924F6AA290010C494 /* PickUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E6E24F6AA290010C494 /* PickUpInteractor.swift */; };
+		4C773E7A24F6AA290010C494 /* PickUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E6E24F6AA290010C494 /* PickUpInteractor.swift */; };
+		4C773E8524F6B06E0010C494 /* Floormap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E7E24F6B06E0010C494 /* Floormap.swift */; };
+		4C773E8624F6B06E0010C494 /* PickupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E7F24F6B06E0010C494 /* PickupData.swift */; };
+		4C773E8724F6B06E0010C494 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E8024F6B06E0010C494 /* Images.swift */; };
+		4C773E8824F6B06E0010C494 /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E8124F6B06E0010C494 /* Features.swift */; };
+		4C773E8924F6B06E0010C494 /* Pickup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E8224F6B06E0010C494 /* Pickup.swift */; };
+		4C773E8A24F6B06E0010C494 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E8324F6B06E0010C494 /* Store.swift */; };
+		4C773E8B24F6B06E0010C494 /* Primary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C773E8424F6B06E0010C494 /* Primary.swift */; };
+		73DBF329BAC7370D0ED868E0 /* Pods_PomeloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6FCB5401665D26E9CC481C /* Pods_PomeloTests.framework */; };
+		F37817A720A62B85D500281C /* Pods_Pomelo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7136E1550AE1EB05A74104C6 /* Pods_Pomelo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C773E4D24F6A84C0010C494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C773E2E24F6A8470010C494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C773E3524F6A8470010C494;
+			remoteInfo = Pomelo;
+		};
+		4C773E5824F6A84C0010C494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C773E2E24F6A8470010C494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C773E3524F6A8470010C494;
+			remoteInfo = Pomelo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25B1E1E23790E42E7B57C8CF /* Pods-Pomelo-PomeloUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomelo-PomeloUITests.debug.xcconfig"; path = "Target Support Files/Pods-Pomelo-PomeloUITests/Pods-Pomelo-PomeloUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C717FE424F8E93400248775 /* ServiceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConfig.swift; sourceTree = "<group>"; };
+		4C717FE824F8F55500248775 /* PickupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupTableViewCell.swift; sourceTree = "<group>"; };
+		4C717FE924F8F55500248775 /* PickupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickupTableViewCell.xib; sourceTree = "<group>"; };
+		4C717FF224F8F8BF00248775 /* UIbutton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIbutton+Extension.swift"; sourceTree = "<group>"; };
+		4C717FF524F93A0700248775 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		4C773E3624F6A8470010C494 /* Pomelo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomelo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C773E3924F6A8470010C494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C773E3B24F6A8470010C494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4C773E3D24F6A8470010C494 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C773E4024F6A8470010C494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C773E4224F6A84C0010C494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C773E4524F6A84C0010C494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C773E4724F6A84C0010C494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C773E4C24F6A84C0010C494 /* PomeloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomeloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C773E5024F6A84C0010C494 /* PomeloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomeloTests.swift; sourceTree = "<group>"; };
+		4C773E5224F6A84C0010C494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C773E5724F6A84C0010C494 /* PomeloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomeloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C773E5B24F6A84C0010C494 /* PomeloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomeloUITests.swift; sourceTree = "<group>"; };
+		4C773E5D24F6A84C0010C494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C773E6924F6AA290010C494 /* PickUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpPresenter.swift; sourceTree = "<group>"; };
+		4C773E6A24F6AA290010C494 /* PickUpWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpWorker.swift; sourceTree = "<group>"; };
+		4C773E6B24F6AA290010C494 /* PickUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpRouter.swift; sourceTree = "<group>"; };
+		4C773E6C24F6AA290010C494 /* PickUpModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpModels.swift; sourceTree = "<group>"; };
+		4C773E6D24F6AA290010C494 /* PickUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpViewController.swift; sourceTree = "<group>"; };
+		4C773E6E24F6AA290010C494 /* PickUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpInteractor.swift; sourceTree = "<group>"; };
+		4C773E7E24F6B06E0010C494 /* Floormap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Floormap.swift; sourceTree = "<group>"; };
+		4C773E7F24F6B06E0010C494 /* PickupData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickupData.swift; sourceTree = "<group>"; };
+		4C773E8024F6B06E0010C494 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		4C773E8124F6B06E0010C494 /* Features.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
+		4C773E8224F6B06E0010C494 /* Pickup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pickup.swift; sourceTree = "<group>"; };
+		4C773E8324F6B06E0010C494 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		4C773E8424F6B06E0010C494 /* Primary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Primary.swift; sourceTree = "<group>"; };
+		56CF5FDA33CE645359DA86A0 /* Pods_Pomelo_PomeloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomelo_PomeloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7136E1550AE1EB05A74104C6 /* Pods_Pomelo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomelo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D2BB6A04A34C906B6924A4B /* Pods-PomeloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomeloTests.debug.xcconfig"; path = "Target Support Files/Pods-PomeloTests/Pods-PomeloTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B6FCB5401665D26E9CC481C /* Pods_PomeloTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PomeloTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFB466BD4FFFB440D0AF9E4 /* Pods-PomeloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomeloTests.release.xcconfig"; path = "Target Support Files/Pods-PomeloTests/Pods-PomeloTests.release.xcconfig"; sourceTree = "<group>"; };
+		AE090F13A90A0CBCE4DBE7F1 /* Pods-Pomelo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomelo.release.xcconfig"; path = "Target Support Files/Pods-Pomelo/Pods-Pomelo.release.xcconfig"; sourceTree = "<group>"; };
+		C7FB72F8ACE0F676AFFB8404 /* Pods-Pomelo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomelo.debug.xcconfig"; path = "Target Support Files/Pods-Pomelo/Pods-Pomelo.debug.xcconfig"; sourceTree = "<group>"; };
+		FD545A68716606122BD62E62 /* Pods-Pomelo-PomeloUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomelo-PomeloUITests.release.xcconfig"; path = "Target Support Files/Pods-Pomelo-PomeloUITests/Pods-Pomelo-PomeloUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C773E3324F6A8470010C494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37817A720A62B85D500281C /* Pods_Pomelo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C773E4924F6A84C0010C494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DBF329BAC7370D0ED868E0 /* Pods_PomeloTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C773E5424F6A84C0010C494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191B6F5F65CC88686DE5CF7E /* Pods_Pomelo_PomeloUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C717FE324F8E91300248775 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				4C717FE424F8E93400248775 /* ServiceConfig.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		4C717FE724F8F53100248775 /* PickupCell */ = {
+			isa = PBXGroup;
+			children = (
+				4C717FE824F8F55500248775 /* PickupTableViewCell.swift */,
+				4C717FE924F8F55500248775 /* PickupTableViewCell.xib */,
+			);
+			path = PickupCell;
+			sourceTree = "<group>";
+		};
+		4C717FEE24F8F86D00248775 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				4C717FF224F8F8BF00248775 /* UIbutton+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		4C773E2D24F6A8470010C494 = {
+			isa = PBXGroup;
+			children = (
+				4C717FF524F93A0700248775 /* Readme.md */,
+				4C773E3824F6A8470010C494 /* Pomelo */,
+				4C773E4F24F6A84C0010C494 /* PomeloTests */,
+				4C773E5A24F6A84C0010C494 /* PomeloUITests */,
+				4C773E3724F6A8470010C494 /* Products */,
+				A0E049A49AED66B0417C21AA /* Pods */,
+				8AE560BA2ED390BD1449378D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C773E3724F6A8470010C494 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C773E3624F6A8470010C494 /* Pomelo.app */,
+				4C773E4C24F6A84C0010C494 /* PomeloTests.xctest */,
+				4C773E5724F6A84C0010C494 /* PomeloUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C773E3824F6A8470010C494 /* Pomelo */ = {
+			isa = PBXGroup;
+			children = (
+				4C717FE324F8E91300248775 /* service */,
+				4C773E7B24F6AA350010C494 /* appScene */,
+				4C773E3924F6A8470010C494 /* AppDelegate.swift */,
+				4C773E3B24F6A8470010C494 /* SceneDelegate.swift */,
+				4C773E3D24F6A8470010C494 /* ViewController.swift */,
+				4C773E3F24F6A8470010C494 /* Main.storyboard */,
+				4C773E4224F6A84C0010C494 /* Assets.xcassets */,
+				4C773E4424F6A84C0010C494 /* LaunchScreen.storyboard */,
+				4C773E4724F6A84C0010C494 /* Info.plist */,
+			);
+			path = Pomelo;
+			sourceTree = "<group>";
+		};
+		4C773E4F24F6A84C0010C494 /* PomeloTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C773E5024F6A84C0010C494 /* PomeloTests.swift */,
+				4C773E5224F6A84C0010C494 /* Info.plist */,
+			);
+			path = PomeloTests;
+			sourceTree = "<group>";
+		};
+		4C773E5A24F6A84C0010C494 /* PomeloUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C773E5B24F6A84C0010C494 /* PomeloUITests.swift */,
+				4C773E5D24F6A84C0010C494 /* Info.plist */,
+			);
+			path = PomeloUITests;
+			sourceTree = "<group>";
+		};
+		4C773E7B24F6AA350010C494 /* appScene */ = {
+			isa = PBXGroup;
+			children = (
+				4C717FEE24F8F86D00248775 /* extension */,
+				4C773E7C24F6AA560010C494 /* pickup */,
+			);
+			path = appScene;
+			sourceTree = "<group>";
+		};
+		4C773E7C24F6AA560010C494 /* pickup */ = {
+			isa = PBXGroup;
+			children = (
+				4C717FE724F8F53100248775 /* PickupCell */,
+				4C773E7D24F6AFFA0010C494 /* pickupEntity */,
+				4C773E6924F6AA290010C494 /* PickUpPresenter.swift */,
+				4C773E6A24F6AA290010C494 /* PickUpWorker.swift */,
+				4C773E6B24F6AA290010C494 /* PickUpRouter.swift */,
+				4C773E6C24F6AA290010C494 /* PickUpModels.swift */,
+				4C773E6D24F6AA290010C494 /* PickUpViewController.swift */,
+				4C773E6E24F6AA290010C494 /* PickUpInteractor.swift */,
+			);
+			path = pickup;
+			sourceTree = "<group>";
+		};
+		4C773E7D24F6AFFA0010C494 /* pickupEntity */ = {
+			isa = PBXGroup;
+			children = (
+				4C773E8124F6B06E0010C494 /* Features.swift */,
+				4C773E7E24F6B06E0010C494 /* Floormap.swift */,
+				4C773E8024F6B06E0010C494 /* Images.swift */,
+				4C773E8224F6B06E0010C494 /* Pickup.swift */,
+				4C773E7F24F6B06E0010C494 /* PickupData.swift */,
+				4C773E8424F6B06E0010C494 /* Primary.swift */,
+				4C773E8324F6B06E0010C494 /* Store.swift */,
+			);
+			path = pickupEntity;
+			sourceTree = "<group>";
+		};
+		8AE560BA2ED390BD1449378D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7136E1550AE1EB05A74104C6 /* Pods_Pomelo.framework */,
+				56CF5FDA33CE645359DA86A0 /* Pods_Pomelo_PomeloUITests.framework */,
+				9B6FCB5401665D26E9CC481C /* Pods_PomeloTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0E049A49AED66B0417C21AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7FB72F8ACE0F676AFFB8404 /* Pods-Pomelo.debug.xcconfig */,
+				AE090F13A90A0CBCE4DBE7F1 /* Pods-Pomelo.release.xcconfig */,
+				25B1E1E23790E42E7B57C8CF /* Pods-Pomelo-PomeloUITests.debug.xcconfig */,
+				FD545A68716606122BD62E62 /* Pods-Pomelo-PomeloUITests.release.xcconfig */,
+				8D2BB6A04A34C906B6924A4B /* Pods-PomeloTests.debug.xcconfig */,
+				9EFB466BD4FFFB440D0AF9E4 /* Pods-PomeloTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C773E3524F6A8470010C494 /* Pomelo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C773E6024F6A84C0010C494 /* Build configuration list for PBXNativeTarget "Pomelo" */;
+			buildPhases = (
+				7B5802B52A17BF1C9AB5F9EB /* [CP] Check Pods Manifest.lock */,
+				4C773E3224F6A8470010C494 /* Sources */,
+				4C773E3324F6A8470010C494 /* Frameworks */,
+				4C773E3424F6A8470010C494 /* Resources */,
+				EC5EE4118FDE742C89D495B2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pomelo;
+			productName = Pomelo;
+			productReference = 4C773E3624F6A8470010C494 /* Pomelo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C773E4B24F6A84C0010C494 /* PomeloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C773E6324F6A84C0010C494 /* Build configuration list for PBXNativeTarget "PomeloTests" */;
+			buildPhases = (
+				0835353EA855DA1CC3546771 /* [CP] Check Pods Manifest.lock */,
+				4C773E4824F6A84C0010C494 /* Sources */,
+				4C773E4924F6A84C0010C494 /* Frameworks */,
+				4C773E4A24F6A84C0010C494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C773E4E24F6A84C0010C494 /* PBXTargetDependency */,
+			);
+			name = PomeloTests;
+			productName = PomeloTests;
+			productReference = 4C773E4C24F6A84C0010C494 /* PomeloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C773E5624F6A84C0010C494 /* PomeloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C773E6624F6A84C0010C494 /* Build configuration list for PBXNativeTarget "PomeloUITests" */;
+			buildPhases = (
+				6A9D25EBFFDC722872EAC247 /* [CP] Check Pods Manifest.lock */,
+				4C773E5324F6A84C0010C494 /* Sources */,
+				4C773E5424F6A84C0010C494 /* Frameworks */,
+				4C773E5524F6A84C0010C494 /* Resources */,
+				07B45B3F3FBD305C424DEA41 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C773E5924F6A84C0010C494 /* PBXTargetDependency */,
+			);
+			name = PomeloUITests;
+			productName = PomeloUITests;
+			productReference = 4C773E5724F6A84C0010C494 /* PomeloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C773E2E24F6A8470010C494 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "anupong dorkkunm";
+				TargetAttributes = {
+					4C773E3524F6A8470010C494 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					4C773E4B24F6A84C0010C494 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 4C773E3524F6A8470010C494;
+					};
+					4C773E5624F6A84C0010C494 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 4C773E3524F6A8470010C494;
+					};
+				};
+			};
+			buildConfigurationList = 4C773E3124F6A8470010C494 /* Build configuration list for PBXProject "Pomelo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C773E2D24F6A8470010C494;
+			productRefGroup = 4C773E3724F6A8470010C494 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C773E3524F6A8470010C494 /* Pomelo */,
+				4C773E4B24F6A84C0010C494 /* PomeloTests */,
+				4C773E5624F6A84C0010C494 /* PomeloUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C773E3424F6A8470010C494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C717FF624F93A0700248775 /* Readme.md in Resources */,
+				4C773E4624F6A84C0010C494 /* LaunchScreen.storyboard in Resources */,
+				4C773E4324F6A84C0010C494 /* Assets.xcassets in Resources */,
+				4C773E4124F6A8470010C494 /* Main.storyboard in Resources */,
+				4C717FEC24F8F55500248775 /* PickupTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C773E4A24F6A84C0010C494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C717FF724F93A0700248775 /* Readme.md in Resources */,
+				4C717FED24F8F55500248775 /* PickupTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C773E5524F6A84C0010C494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07B45B3F3FBD305C424DEA41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomelo-PomeloUITests/Pods-Pomelo-PomeloUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomelo-PomeloUITests/Pods-Pomelo-PomeloUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pomelo-PomeloUITests/Pods-Pomelo-PomeloUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0835353EA855DA1CC3546771 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PomeloTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A9D25EBFFDC722872EAC247 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pomelo-PomeloUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B5802B52A17BF1C9AB5F9EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pomelo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC5EE4118FDE742C89D495B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomelo/Pods-Pomelo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomelo/Pods-Pomelo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pomelo/Pods-Pomelo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C773E3224F6A8470010C494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C773E8A24F6B06E0010C494 /* Store.swift in Sources */,
+				4C773E7724F6AA290010C494 /* PickUpViewController.swift in Sources */,
+				4C773E8724F6B06E0010C494 /* Images.swift in Sources */,
+				4C773E7524F6AA290010C494 /* PickUpModels.swift in Sources */,
+				4C773E8824F6B06E0010C494 /* Features.swift in Sources */,
+				4C773E6F24F6AA290010C494 /* PickUpPresenter.swift in Sources */,
+				4C773E8524F6B06E0010C494 /* Floormap.swift in Sources */,
+				4C717FEA24F8F55500248775 /* PickupTableViewCell.swift in Sources */,
+				4C717FF324F8F8BF00248775 /* UIbutton+Extension.swift in Sources */,
+				4C773E3E24F6A8470010C494 /* ViewController.swift in Sources */,
+				4C773E7324F6AA290010C494 /* PickUpRouter.swift in Sources */,
+				4C717FE524F8E93400248775 /* ServiceConfig.swift in Sources */,
+				4C773E3A24F6A8470010C494 /* AppDelegate.swift in Sources */,
+				4C773E7124F6AA290010C494 /* PickUpWorker.swift in Sources */,
+				4C773E7924F6AA290010C494 /* PickUpInteractor.swift in Sources */,
+				4C773E8B24F6B06E0010C494 /* Primary.swift in Sources */,
+				4C773E8624F6B06E0010C494 /* PickupData.swift in Sources */,
+				4C773E3C24F6A8470010C494 /* SceneDelegate.swift in Sources */,
+				4C773E8924F6B06E0010C494 /* Pickup.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C773E4824F6A84C0010C494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C773E7824F6AA290010C494 /* PickUpViewController.swift in Sources */,
+				4C773E7224F6AA290010C494 /* PickUpWorker.swift in Sources */,
+				4C773E7024F6AA290010C494 /* PickUpPresenter.swift in Sources */,
+				4C717FF424F8F8BF00248775 /* UIbutton+Extension.swift in Sources */,
+				4C773E7624F6AA290010C494 /* PickUpModels.swift in Sources */,
+				4C773E7424F6AA290010C494 /* PickUpRouter.swift in Sources */,
+				4C717FE624F8E93400248775 /* ServiceConfig.swift in Sources */,
+				4C773E5124F6A84C0010C494 /* PomeloTests.swift in Sources */,
+				4C717FEB24F8F55500248775 /* PickupTableViewCell.swift in Sources */,
+				4C773E7A24F6AA290010C494 /* PickUpInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C773E5324F6A84C0010C494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C773E5C24F6A84C0010C494 /* PomeloUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C773E4E24F6A84C0010C494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C773E3524F6A8470010C494 /* Pomelo */;
+			targetProxy = 4C773E4D24F6A84C0010C494 /* PBXContainerItemProxy */;
+		};
+		4C773E5924F6A84C0010C494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C773E3524F6A8470010C494 /* Pomelo */;
+			targetProxy = 4C773E5824F6A84C0010C494 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C773E3F24F6A8470010C494 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C773E4024F6A8470010C494 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C773E4424F6A84C0010C494 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C773E4524F6A84C0010C494 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C773E5E24F6A84C0010C494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C773E5F24F6A84C0010C494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C773E6124F6A84C0010C494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FB72F8ACE0F676AFFB8404 /* Pods-Pomelo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pomelo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Pomelo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C773E6224F6A84C0010C494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE090F13A90A0CBCE4DBE7F1 /* Pods-Pomelo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pomelo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Pomelo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C773E6424F6A84C0010C494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D2BB6A04A34C906B6924A4B /* Pods-PomeloTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PomeloTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.PomeloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomelo.app/Pomelo";
+			};
+			name = Debug;
+		};
+		4C773E6524F6A84C0010C494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EFB466BD4FFFB440D0AF9E4 /* Pods-PomeloTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PomeloTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.PomeloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomelo.app/Pomelo";
+			};
+			name = Release;
+		};
+		4C773E6724F6A84C0010C494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25B1E1E23790E42E7B57C8CF /* Pods-Pomelo-PomeloUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PomeloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.PomeloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pomelo;
+			};
+			name = Debug;
+		};
+		4C773E6824F6A84C0010C494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD545A68716606122BD62E62 /* Pods-Pomelo-PomeloUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PomeloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.PomeloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pomelo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C773E3124F6A8470010C494 /* Build configuration list for PBXProject "Pomelo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C773E5E24F6A84C0010C494 /* Debug */,
+				4C773E5F24F6A84C0010C494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C773E6024F6A84C0010C494 /* Build configuration list for PBXNativeTarget "Pomelo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C773E6124F6A84C0010C494 /* Debug */,
+				4C773E6224F6A84C0010C494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C773E6324F6A84C0010C494 /* Build configuration list for PBXNativeTarget "PomeloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C773E6424F6A84C0010C494 /* Debug */,
+				4C773E6524F6A84C0010C494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C773E6624F6A84C0010C494 /* Build configuration list for PBXNativeTarget "PomeloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C773E6724F6A84C0010C494 /* Debug */,
+				4C773E6824F6A84C0010C494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C773E2E24F6A8470010C494 /* Project object */;
+}

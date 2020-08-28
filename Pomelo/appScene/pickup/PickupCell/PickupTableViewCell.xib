@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PickupTableViewCell" rowHeight="80" id="KGk-i7-Jjw" customClass="PickupTableViewCell" customModule="Pomelo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hW0-TI-9sb">
+                        <rect key="frame" x="12" y="25" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Hpz-Ah-5YJ"/>
+                            <constraint firstAttribute="width" constant="30" id="tcT-K9-jsb"/>
+                        </constraints>
+                        <state key="normal" image="checkmark.circle.fill" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrH-q9-FNq">
+                        <rect key="frame" x="50" y="28.5" width="68" height="23"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="lblDis" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDG-XU-1Sa">
+                        <rect key="frame" x="126" y="32" width="186" height="16.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="f0E-VK-zLS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblType" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVL-Hc-aaH">
+                        <rect key="frame" x="50" y="55.5" width="45.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="lblLocation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxH-ow-LFQ">
+                        <rect key="frame" x="50" y="8" width="69" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rrH-q9-FNq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" priority="800" id="1E4-VJ-bkg"/>
+                    <constraint firstItem="JxH-ow-LFQ" firstAttribute="leading" secondItem="rrH-q9-FNq" secondAttribute="leading" id="1Kq-Cj-fPb"/>
+                    <constraint firstAttribute="trailing" secondItem="VDG-XU-1Sa" secondAttribute="trailing" constant="8" id="1gp-RG-BSn"/>
+                    <constraint firstItem="pVL-Hc-aaH" firstAttribute="top" secondItem="rrH-q9-FNq" secondAttribute="bottom" constant="4" id="F2X-W7-g0d"/>
+                    <constraint firstItem="JxH-ow-LFQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Gad-dG-GXE"/>
+                    <constraint firstAttribute="bottom" secondItem="pVL-Hc-aaH" secondAttribute="bottom" constant="8" id="Rsx-Ta-AVV"/>
+                    <constraint firstItem="JxH-ow-LFQ" firstAttribute="width" secondItem="rrH-q9-FNq" secondAttribute="width" multiplier="1.01562" id="RvV-AZ-e0d"/>
+                    <constraint firstItem="hW0-TI-9sb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="T6d-QS-STd"/>
+                    <constraint firstItem="VDG-XU-1Sa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Tcy-2D-ykx"/>
+                    <constraint firstItem="pVL-Hc-aaH" firstAttribute="width" secondItem="rrH-q9-FNq" secondAttribute="width" multiplier="0.671875" id="a4J-BC-6b6"/>
+                    <constraint firstItem="rrH-q9-FNq" firstAttribute="leading" secondItem="hW0-TI-9sb" secondAttribute="trailing" constant="8" id="aKC-jT-1u2"/>
+                    <constraint firstItem="hW0-TI-9sb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="e2Z-ch-iOk"/>
+                    <constraint firstItem="VDG-XU-1Sa" firstAttribute="leading" secondItem="rrH-q9-FNq" secondAttribute="trailing" constant="8" id="fFX-Gv-nRt"/>
+                    <constraint firstItem="rrH-q9-FNq" firstAttribute="top" secondItem="JxH-ow-LFQ" secondAttribute="bottom" constant="4" id="s7k-ar-5Yc"/>
+                    <constraint firstItem="pVL-Hc-aaH" firstAttribute="leading" secondItem="rrH-q9-FNq" secondAttribute="leading" id="wid-Fp-1dB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnCheck" destination="hW0-TI-9sb" id="kNb-Tq-98Z"/>
+                <outlet property="constLblLocationBtm" destination="s7k-ar-5Yc" id="0Bb-vM-ROf"/>
+                <outlet property="constLblLocationTop" destination="Gad-dG-GXE" id="4oG-u9-p98"/>
+                <outlet property="constLblTypeBtm" destination="Rsx-Ta-AVV" id="JU5-Mu-9ig"/>
+                <outlet property="constLblTypeTop" destination="F2X-W7-g0d" id="Pff-Bh-bvB"/>
+                <outlet property="lblDistance" destination="VDG-XU-1Sa" id="M6z-iI-BHB"/>
+                <outlet property="lblLocation" destination="JxH-ow-LFQ" id="TDl-CX-Zle"/>
+                <outlet property="lblName" destination="rrH-q9-FNq" id="aKY-h6-lmC"/>
+                <outlet property="lblType" destination="pVL-Hc-aaH" id="BaJ-S1-aen"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="142.63392857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
